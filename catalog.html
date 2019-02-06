@@ -73,7 +73,19 @@
       <p class="footer-contacts">Nerds Design Studio</p>
       <p class="footer-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
       <p class="footer-phone">  Тел. +7(812)275-75-75</p>
-      <p><a class="button-write-to-us" href="write-to-us.html">Напишите нам</a></p>
+      <p><a class="button-write-to-us" href="#">Напишите нам</a></p>
+      <h4 class="visually-hidden">Напишите нам</h4>
+      <p>Напишите нам</p>
+      <form action="/echo" method="post">
+         <label for="name-field">Ваше имя:</label>
+            <input type="text" name="email-name" id="name-field"></form>
+         <br>
+         <label for="email-field">Ваш e-mail:</label>
+            <input type="text" name="email-name" id="email-field">
+          <br>
+          <p>Текст письма:</p>
+          <textarea name="comment" id="text-letter" rows="10">В свободной форме</textarea>
+        <input type="submit" value="Отправить">
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Логотип Вконтакте"></a></li>
