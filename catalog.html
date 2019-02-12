@@ -24,14 +24,14 @@
         <h1 class="main-title">Магазин готовых шаблонов</h1>
     </header>
     <main class="container">
-    <section class="filter">
+      <section class="filter">
         <p>Стоимость</p>
         <input type="range" min="0" max="15000" step="1" value="10000" id="filter-price">
         <fieldset>
         <legend>Сетка:</legend>
         <ul class="net">
           <li class="filter-net">
-            <input type="radio" name="position-one" id="filter-adaptive"checked>
+            <input type="radio" name="position-one" id="filter-adaptive" checked>
             <label for="filter-adaptive">Адаптивная</label>
           </li>
           <li>
@@ -80,15 +80,16 @@
             <li>По названию</li>
             </ul>
             </fieldset>
+          </section>
             <a class="sorting-icon-down"><img src="img/icon-down-dir.png" width="11" height="10" alt="Стрелка сортировки вниз"></a>
             <a class="sorting-icon-down-up"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка сортировки вверх"></a>
           <h2 class="visually-hidden">Шаблоны вебсайтов</h2>
           <ul class="website-templates">
+            <li class="catalog-item">
             <h3>Sedona Информациооный сайт для туристов</h3>
             <p class="catalog-item-image">
               <img src="img/img-sedona-jpg.png" width="360" height="576" alt="Пример сайта Пинк">
             </p>
-          </a>
           <p class="catalog-item-price">
             <b>9900 руб.</b>
             <a class="button" href="#">Купить</a>
@@ -98,7 +99,7 @@
               <a href="#">
                 <h3>Pink app Продуктовый лендинг приложения для IOS и Android</h3>
                 <p class="catalog-item-image">
-                  <img src="img/browser.svg" width="360" height="40">
+                  <img src="img/browser.svg" width="360" height="40" alt="Шапка слайда">
                   <img src="img/img-pink-jpg.png" width="360" height="576" alt="Пример сайта Пинк">
                 </p>
               </a>
@@ -111,7 +112,7 @@
               <a href="#">
                 <h3>Sedona Информациооный сайт для туристов</h3>
                 <p class="catalog-item-image">
-                  <img src="img/browser.svg" width="360" height="40">
+                  <img src="img/browser.svg" width="360" height="40"  alt="Шапка слайда">
                   <img src="img/img-sedona-jpg.png" width="360" height="576" alt="Пример сайта Пинк">
                 </p>
               </a>
@@ -124,7 +125,7 @@
               <a href="#">
                 <h3>Сайт салона красоты. Для мужчин, да.</h3>
                 <p class="catalog-item-image">
-                  <img src="img/browser.svg" width="360" height="40">
+                  <img src="img/browser.svg" width="360" height="40"  alt="Шапка слайда">
                   <img src="img/img-barbershop-jpg.png" width="360" height="576" alt="Пример сайта Барбершоп">
                 </p>
               </a>
@@ -137,7 +138,7 @@
               <a href="#">
                 <h3>Интернет-магазин вязаных игрушек</h3>
                 <p class="catalog-item-image">
-                  <img src="img/browser.svg" width="360" height="40">
+                  <img src="img/browser.svg" width="360" height="40"  alt="Шапка слайда">
                   <img src="img/img-mishka-jpg.png" width="360" height="576" alt="Пример сайта Мишка">
                 </p>
               </a>
@@ -150,7 +151,7 @@
               <a href="#">
                 <h3>Лендинг курсов повышения квалификации</h3>
                 <p class="catalog-item-image">
-                  <img src="img/browser.svg" width="360" height="40">
+                  <img src="img/browser.svg" width="360" height="40"  alt="Шапка слайда">
                   <img src="img/img-aplus-jpg.png" width="360" height="576" alt="Пример сайта Аплюс">
                 </p>
               </a>
@@ -163,7 +164,7 @@
               <a href="#">
                 <h3>Промо-сайт производителя крафтового кваса</h3>
                 <p class="catalog-item-image">
-                  <img src="img/browser.svg" width="360" height="40">
+                  <img src="img/browser.svg" width="360" height="40"  alt="Шапка слайда">
                   <img src="img/img-kvast-jpg.png" width="360" height="576" alt="Пример сайта Кваст">
                 </p>
               </a>
@@ -172,6 +173,7 @@
                 <a class="button" href="#">Купить</a>
               </p>
             </li>
+        </ul>
           <div class="pagination">
             <ul>
                 <li class="active"><a href="#">1</a></li>
@@ -180,9 +182,15 @@
                 <li><a href="#">Следующая</a></li>
             </ul>
      </div>
-        </section>
   </main>
     <footer class="main-footer">
+      <section class="modal modal-map">
+           <h2 class="visually-hidden">Адрес компании на карте</h2>
+           <p>
+             <img src="img/map.ppg" width="1440" height="416" alt="Адрес офиса интернет-магазине Nerds: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+             <img src="img/map-marker.ppg" width="231" height="190" alt="Метка местоположения офиса на карте">
+           </p>
+         </section>
       <p class="footer-contacts">Nerds Design Studio</p>
       <p class="footer-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
       <p class="footer-phone">  Тел. +7(812)275-75-75</p>
