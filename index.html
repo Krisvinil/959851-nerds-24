@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -18,12 +21,12 @@
             </ul>
             <div>
             <a><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина"></a>
-            <a href="#" class="maim-busket">Корзина</a>
+            <a href="#" class="main-busket">Корзина</a>
           </div>
         </nav>
-        <h1>Долго, дорого,скурпулезно.</h1>
-        <p>Математический выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="button-know-more" href="#">Узнать больше</a>
+        <h1 class="index-title"> Долго, дорого,скурпулезно.</h1>
+        <p class="index-title-info">Математический выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <a class="button4" href="#">Узнать больше</a>
         <aside>
             <img src="img/slide-1.png" width="698" height="413" alt="Slide1">
             <img src="img/slide-2.png" width="698" height="413" alt="Slide2">
@@ -33,21 +36,29 @@
     <main class="container">
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
-          <a><img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты"></a>
-          <p>Веб-сайты</p>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="web-sites" href="#">Заказать</a>
-          <a><img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения"></a>
-          <p>Приложения</p>
-          <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-          <a class="Aps" href="#">Заказать</a>
-          <a><img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации"></a>
-          <p>Презентации</p>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="presentation" href="#">Заказать</a>
+        <ul class="features-list">
+          <li class="feature-item">
+            <a><img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты"></a>
+              <h3>Веб-сайты</h3>
+                <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                  <a class="button1" href="#">Заказать</a>
+          </li>
+          <li class="feature-item">
+            <a><img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения"></a>
+             <h3>Приложения</h3>
+               <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
+                 <a class="button2" href="#">Заказать</a>
+          </li>
+          <li class="feature-item">
+            <a><img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации"></a>
+             <h3>Презентации</h3>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                <a class="button3" href="#">Заказать</a>
+          </li>
+      </ul>
     </section>
     <section>
-        <h3 class="about-us">Мы-маленькая, но гордая дизайн-студия из Краснодара</h3>
+        <h4 class="about-us">Мы-маленькая, но гордая дизайн-студия из Краснодара</h4>
           <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет прревыше креатива. Работаем не покладая рук, как роботы</p>
           <p>Выполняем заказы на разработку:</p>
       <ul>
@@ -84,7 +95,7 @@
   </main>
   <footer class="main-footer">
     <section class="modal modal-map">
-         <h2 class="visually-hidden">Адрес компании на карте</h2>
+         <h5 class="visually-hidden">Адрес компании на карте</h5>
          <p>
            <img src="img/map.ppg" width="1440" height="416" alt="Адрес офиса интернет-магазине Nerds: ул. Большая Конюшенная 19/8, Санкт-Петербург">
            <img src="img/map-marker.ppg" width="231" height="190" alt="Метка местоположения офиса на карте">
@@ -111,7 +122,7 @@
         <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Фейсбук"></a></li>
         <li><a class="social-button" href="#"><img src="img/insta-icon.svg" width="12" height="22" alt="Логотип Инстаграм"></a></li>
       </ul>
-        <p class="profitability">Давайте дружить,это выгодно!</p>
+        <h6>Давайте дружить,это выгодно!</h6>
           <p>Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
