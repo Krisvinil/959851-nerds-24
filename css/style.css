@@ -39,8 +39,8 @@ color: #000000;
   border: none;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
-  vertical-align: middle;
+  text-align: left;
+  list-style: none;
 }
 
 .site-navigation a:hover,
@@ -199,9 +199,7 @@ background-color: #e1e1e1;
 text-align: center;
 }
 
-
-catalog
-
+/* Страница каталога*/
 
 .catalog-title {
   font-size: 55px;
@@ -311,4 +309,131 @@ fieldset{
 .button-catalog-price:hover,
 .button-catalog-price:focus {
     background-color: #e74246;
+}
+
+/* Cеточные стили-index*/
+.main-header {
+  margin-bottom:80px;
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-navigation{
+display: flex;
+margin:0;
+padding: 0;
+width:660px;
+justify-content: space-between;
+}
+
+.main-busket{
+margin:0;
+padding: 0;
+width:160px;
+}
+
+.main-header-logo{
+  width: 160px;
+  height: 65px;
+  margin-right: 200px;
+}
+
+.features-list{
+  display: flex;
+  margin:0;
+  padding: 0;
+  justify-content: space-between;
+
+}
+
+.feature-item{
+  margin: 0;
+  padding: 0;
+  min-height: 350px;
+  width: 300px;
+}
+
+/* Cеточные стили-catalog*/
+.main-navigation-catalog{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.catalog-title{
+    align-items: center;
+    margin-bottom: 115px;
+    padding: 0;
+    margin: 0;
+    min-height: 55px;
+}
+
+.filter{
+width: 260px;
+  /* времено*/
+  min-height: 815px;
+}
+
+.catalog-catalog{
+  width: 760px;
+  /* времено*/
+  min-height: 1915px;
+}
+
+.catalog-columns{
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item{
+  width: 360px;
+  margin-bottom: 33px;
+  margin-right: 40px;
+  /* времено*/
+  min-height: 617px;
+}
+
+.website-templates{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+
+  list-style: none;
+}
+
+.pagination-list{
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  /* времено*/
+  min-height: 50px;
+
+}
+
+/* Cеточные стили-footer*/
+.main-footer{
+  margin-top: 70px;
+}
+
+.footer-social{
+  display: flex;
+}
+
+.social-button{
+  margin: 0;
+  width: 260px;
+  margin-right: 140px;
+}
+
+.footer-bonus{
+  margin: 0;
+  width: 560px;
 }

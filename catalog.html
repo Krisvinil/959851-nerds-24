@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation-catalog">
           <a class="main-header-logo" href="nerds-index.psd">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип интернет-магазина NERDS">
           </a>
@@ -19,14 +19,15 @@
             <li>Магазин</li>
             <li><a href="#">Контакты</a></li>
             </ul>
-            <div>
-            <a><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина"></a>
-            <a href="#" class="main-busket">Корзина</a>
-          </div>
+            <ul class="main-busket">
+              <li><a href="#" class="busket-link">Корзина</a></li>
+           </ul>
         </nav>
         <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     </header>
     <main class="container">
+      <h2 class="visually-hidden">Шаблоны вебсайтов</h2>
+      <div class="catalog-columns">
       <section class="filter">
         <p>Стоимость</p>
         <input type="range" min="0" max="15000" step="1" value="10000" id="filter-price">
@@ -74,7 +75,7 @@
       </fieldset>
       <button type="submit" class="filter-button-button">Показать</button>
       </section>
-        <section class="block-sorting">
+      <section class="block-sorting">
           <fieldset>
           <legend class="inner-sorting">Сортировать:</legend>
           <ul class="sorting">
@@ -83,10 +84,10 @@
             <li>По названию</li>
             </ul>
             </fieldset>
-          </section>
             <a class="sorting-icon-down"><img src="img/icon-down-dir.png" width="11" height="10" alt="Стрелка сортировки вниз"></a>
             <a class="sorting-icon-down-up"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка сортировки вверх"></a>
-          <h2 class="visually-hidden">Шаблоны вебсайтов</h2>
+      </section>
+        <section class="catalog-catalog">
           <ul class="website-templates">
             <li class="catalog-item">
               <p class="catalog-item-image">
@@ -142,17 +143,16 @@
                 <p class="catalog-item-info">Промо-сайт производителя крафтового кваса</p>
                 <a class="button-catalog-price" href="#">9900 руб.</a>
             </li>
-        </ul>
-          <div class="pagination">
-            <ul>
+          </ul>
+            <ul class="pagination-list">
                 <li class="active"><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">Следующая</a></li>
             </ul>
-     </div>
-  </main>
-    <footer class="main-footer">
+            </section>
+          </div>
+          </main>
       <section class="modal modal-map">
            <h2 class="visually-hidden">Адрес компании на карте</h2>
            <p>
@@ -173,15 +173,17 @@
           <textarea name="comment" id="text-letter" rows="10" placeholder="В свободной форме"></textarea>
         <input type="submit" value="Отправить">
         </form>
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Логотип Вконтакте"></a></li>
-            <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Фейсбук"></a></li>
-            <li><a class="social-button" href="#"><img src="img/insta-icon.svg" width="12" height="22" alt="Логотип Инстаграм"></a></li>
-          </ul>
-            <h6>Давайте дружить,это выгодно!</h6>
-              <p>Скидка 10% для друзей из социальных сетей</p>
-        </div>
-    </footer>
-  </body>
-</html>
+
+        <footer class="main-footer">
+          <div class="footer-social">
+            <ul>
+              <li><a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Логотип Вконтакте"></a></li>
+              <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Фейсбук"></a></li>
+              <li><a class="social-button" href="#"><img src="img/insta-icon.svg" width="12" height="22" alt="Логотип Инстаграм"></a></li>
+            </ul>
+              <h6 class="footer-bonus">Давайте дружить,это выгодно!</h6>
+                <p>Скидка 10% для друзей из социальных сетей</p>
+          </div>
+        </footer>
+        </body>
+      </html>
