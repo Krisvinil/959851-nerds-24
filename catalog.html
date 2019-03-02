@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo">
+          <a class="main-header-logo" href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип интернет-магазина NERDS">
           </a>
           <ul class="site-navigation">
@@ -27,19 +27,36 @@
     </header>
     <main class="container">
       <h2 class="visually-hidden">Шаблоны вебсайтов</h2>
+        <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+           <div class="toggle toggle-max"></div>
+
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+
+          </div>
+            </div>
+
+          </fieldset>
       <div class="catalog-columns">
       <section class="filter">
-        <p>Стоимость</p>
-        <input type="range" min="0" max="15000" step="1" value="10000" id="filter-price">
-        <fieldset>
-        <legend class="net">Сетка:</legend>
+        <fieldset class="net">
+        <legend>Сетка:</legend>
         <ul>
           <li class="filter-net">
             <input type="radio" name="position-one" id="filter-adaptive" checked>
             <label for="filter-adaptive">Адаптивная</label>
           </li>
           <li class="filter-net">
-            <input type="radio" name="position-one" id="filter-fixed">
+            <input type="radio" name="position-one" id="filter-fixed" >
               <label for="filter-fixed">Фиксированная</label>
           </li>
           <li class="filter-net">
@@ -48,15 +65,17 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset>
+      <fieldset class="features">
       <legend>Особенности:</legend>
         <ul>
           <li class="filter-features">
-            <input type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider">Слайдер</label>
+            <label class="filter-slider">
+            <input type="checkbox" name="slider" checked class="visually-hidden">
+              <span class="checkbox-indicator"></span>Слайдер
+            </label>
           </li>
           <li class="filter-features">
-            <input type="checkbox" name="advantage-block" id="filter-advantage-block">
+            <input type="checkbox" name="advantage-block" id="filter-advantage-block" class=>
             <label for="filter-advantage-block">Блок преимуществ</label>
           </li>
           <li class="filter-features">
@@ -167,26 +186,6 @@
              <p class="footer-phone">  Тел. +7(812)275-75-75</p>
              <p><a class="button-write-to-us" href="#">Напишите нам</a></p>
       </section>
-
-
-      <section class="letter">
-        <h9>Напишите нам</h6>
-      <form class="letter-form" action="https://" method="post">
-         <p class="letter-item">
-          <label for="name-field">Ваше имя:</label>
-            <input type="text" name="email-name" id="name-field" placeholder="Имя Фамилия">
-         </p>
-         <p class="letter-item">
-          <label for="email-field">Ваш e-mail:</label>
-            <input type="text" name="email-name" id="email-field" placeholder="email@example.com">
-         </p>
-         <p class="letter-item">
-          <p>Текст письма:</p>
-          <textarea name="comment" id="text-letter" rows="10" placeholder="В свободной форме"></textarea>
-          </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-    </section>
       </main>
 
       <footer class="main-footer">
@@ -230,5 +229,26 @@
           </p>
         </div>
     </footer>
+
+    <section class="modal modal-letter">
+      <h6>Напишите нам</h6>
+    <form class="letter-form" action="https://echo.htmlacademy.ru/" method="post">
+       <p>
+        <label for="name-field">Ваше имя:</label>
+          <input type="text" name="email-name" id="name-field" placeholder="Имя Фамилия">
+       </p>
+       <p>
+        <label for="email-field">Ваш e-mail:</label>
+          <input type="text" name="email-name" id="email-field" placeholder="email@example.com">
+       </p>
+       <p class="letter-item">
+        <p>Текст письма:</p>
+        <textarea name="comment" id="text-letter" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+      <button class="modal-button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="submit">Закрыть</button>
+  </section>
+
     </body>
   </html>

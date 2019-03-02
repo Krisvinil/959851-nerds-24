@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
     <header class="main-header">
         <nav class="main-navigation">
@@ -23,15 +24,38 @@
             <li><a href="#" class="busket-link">Корзина</a></li>
          </ul>
         </nav>
-        <h1 class="index-title"> Долго, дорого,скурпулезно.</h1>
-        <p class="index-title-info">Математический выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="button4" href="#">Узнать больше</a>
-        <aside>
-            <img src="img/slide-1.png" width="698" height="413" alt="Slide1">
-          <!<img src="img/slide-2.png" width="698" height="413" alt="Slide2">>
-          <!<img src="img/slide-3.png" width="698" height="413" alt="Slide3">>
-        </aside>
-    </header>
+     </header>
+     <section class="slider">
+   <div class="container">
+     <h2 class="visually-hidden">Преимущества</h2>
+     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+     <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+     <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+     <div class="slider-controls">
+       <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+       <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+       <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+     </div>
+     <ul class="slider-list">
+       <li class="slider-item">
+         <h3>Долго, дорого,<br> скрупулезно.</h3>
+         <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+         <a class="slider-item-button button" href="#">Узнать больше</a>
+       </li>
+       <li class="slider-item">
+         <h3>Любим математику как никто другой</h3>
+         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+         <a class="slider-item-button button" href="#">Узнать больше</a>
+       </li>
+       <li class="slider-item">
+         <h3>Только ночь,<br> только хардкор</h3>
+         <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+         <a class="slider-item-button button" href="#">Узнать больше</a>
+       </li>
+     </ul>
+   </div>
+ </section>
+
     <main class="container">
      <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -91,38 +115,20 @@
         <li class="site-mishka"><a href="#"><img src="img/logo-4-png.png" width="173" height="84" alt="logo-mishka"></a></li>
       </ul>
     </article>
-    <section class="modal modal-map">
-         <h5 class="visually-hidden">Адрес компании на карте</h5>
-         <p>
+    <section class="location">
+         <h2 class="visually-hidden">Адрес компании на карте</h2>
+         <div class="map">
            <img src="img/map.jpg" width="1440" height="416" alt="Адрес офиса интернет-магазине Nerds: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-           <img src="img/map-marker-png.png" width="231" height="190" alt="Метка местоположения офиса на карте">
+           <div>
+             <img src="img/map-marker-png.png" width="231" height="190" alt="Метка местоположения офиса на карте">
+           </div>
+           </div>
          </p>
-       </section>
-       <section class="footer-contacts">
-    <p class="footer-contacts">Nerds Design Studio</p>
-    <p class="footer-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
-    <p class="footer-phone">  Тел. +7(812)275-75-75</p>
-    <p><a class="button-write-to-us" href="#">Напишите нам</a></p>
+           <p class="footer-contacts">Nerds Design Studio</p>
+           <p class="footer-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+           <p class="footer-phone">  Тел. +7(812)275-75-75</p>
+           <p><a class="button-write-to-us" href="#">Напишите нам</a></p>
     </section>
-
-    <section class="modal modal-letter">
-      <h6>Напишите нам</h6>
-    <form class="letter-form" action="https://" method="post">
-       <p>
-        <label for="name-field">Ваше имя:</label>
-          <input type="text" name="email-name" id="name-field" placeholder="Имя Фамилия">
-       </p>
-       <p>
-        <label for="email-field">Ваш e-mail:</label>
-          <input type="text" name="email-name" id="email-field" placeholder="email@example.com">
-       </p>
-       <p class="letter-item">Текст письма:</p>
-        <textarea name="comment" id="text-letter" rows="10" placeholder="В свободной форме"></textarea>
-        </p>
-    </form>
-    <button class="modal-button" type="submit">Отправить</button>
-    <button class="modal-close" type="submit">Закрыть</button>
-  </section>
     </main>
 
     <footer class="main-footer">
@@ -166,5 +172,26 @@
         </p>
       </div>
   </footer>
+
+  <section class="modal modal-letter">
+    <h6>Напишите нам</h6>
+  <form class="letter-form" action="https://echo.htmlacademy.ru/" method="post">
+     <p>
+      <label for="name-field">Ваше имя:</label>
+        <input type="text" name="email-name" id="name-field" placeholder="Имя Фамилия">
+     </p>
+     <p>
+      <label for="email-field">Ваш e-mail:</label>
+        <input type="text" name="email-name" id="email-field" placeholder="email@example.com">
+     </p>
+     <p class="letter-item">
+      <p>Текст письма:</p>
+      <textarea name="comment" id="text-letter" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+    <button class="modal-button" type="submit">Отправить</button>
+  </form>
+  <button class="modal-close" type="submit">Закрыть</button>
+</section>
+
   </body>
 </html>
