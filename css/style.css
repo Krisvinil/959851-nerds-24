@@ -140,6 +140,8 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   margin-right: auto;
   padding-top:50px;
+
+
 }
 
 .main-navigation  {
@@ -529,6 +531,8 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   font-weight: 500;
   margin-bottom: 117px;
+  padding-bottom: 110px;
+  padding-top: 80px;
 }
 
 
