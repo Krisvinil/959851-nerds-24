@@ -42,7 +42,6 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -541,16 +540,22 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-options-title {
-  font: 700 18px/30px "Roboto", "Arial", sans-serif;
   padding: 0;
   margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .filter-options-list{
   margin: 0;
   padding: 0;
   margin-top: 16px;
-   list-style: none;
+  list-style: none;
 
 }
 
@@ -629,7 +634,7 @@ input[type="radio"].visually-hidden {
   width: 60px;
   padding: 8px 10px;
   margin-left: 8px;
-font: 400 16px/22px "Roboto", "Arial", sans-serif;
+  font: 400 16px/22px "Roboto", "Arial", sans-serif;
 
   text-align: center;
   color: #283136;
@@ -947,8 +952,8 @@ fieldset{
   padding: 0;
   margin: 0;
   width: 760px;
- margin-bottom: 29px;
- margin-top: 49px;
+  margin-bottom: 29px;
+  margin-top: 49px;
   list-style: none;
 }
 
@@ -980,23 +985,26 @@ fieldset{
 }
 
 .pagination-item {
-  margin-right: 5px;
+  margin-right: 11px;
   min-width: 50px;
   height:50px;
   margin-bottom: 60px;
 }
 
-.pagination-item:last-child {
-  margin-right: 0;
+.pagination-item:last-child a {
+  padding: 12px 18px;
 }
 
 
 .pagination-item a {
   display: block;
-  padding: 16px 19px;
+  padding: 15px 20px;
   border-radius: 3px;
   color: #000000;
   background-color: #eeeeee;
+  cursor: pointer;
+  font: 500 16px/19px "Roboto", "Arial", sans-serif;
+  border-radius: 3px;
 }
 
 .pagination-item a:hover,
@@ -1007,25 +1015,27 @@ fieldset{
 .pagination-item a:active {
   background-color: #dfdfdf;
   color: #959595;
-  border-top:3px solid #bfbfbf
+  border-top:3px solid #bfbfbf;
+  outline:none;
 }
 
 .pagination-item-current a {
   color: #000000;
   border: 3px solid #dbdbdb;
   background-color: #ffffff;
+  padding: 12px 18px;
 }
 
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
   color: #000000;
-
   background-color: #ffffff;
 }
+
 .filters {
   margin: 0;
-    padding: 0;
+  padding: 0;
 }
 
 .filter fieldset {
@@ -1056,10 +1066,10 @@ fieldset{
 
 .filter-option {
   font: 400 16px/20px "Roboto", "Arial", sans-serif;
- color: #283136;
- text-transform: none;
- margin-bottom: 20px;
- padding: 0;
+  color: #283136;
+  text-transform: none;
+  margin-bottom: 20px;
+  padding: 0;
   box-shadow: 0 0 0 3px green;
 }
 
@@ -1337,7 +1347,7 @@ textarea {
   margin: 0;
   padding: 0;
   padding: 48px 50px ;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: #ffffff;
 }
 
 .container-contacts p,
@@ -1346,11 +1356,83 @@ textarea {
   padding: 0;
 }
 
+.studio-name{
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+}
+
+.studio-address{
+  font-size: 16px;
+  line-height: 18px;
+  color:#8f8f8f;
+  font-weight: 400;
+  width: 202px;
+}
+
+.phone-number{
+  font-size: 16px;
+  line-height: 18px;
+  color:#8f8f8f;
+  font-weight: 400;
+}
+
 .location{
   margin: 0;
   padding: 0;
   position: relative;
   overflow: hidden;
+}
+
+.arrows {
+  display: flex;
+  width: 40px;
+  justify-content: space-between;
+  padding-top: 9px;
+  margin-left: 21px;
+}
+
+.arrow::before {
+  display: inline-block;
+  vertical-align: middle;
+  border: 10px solid #000000;
+  border-right-width: 5px;
+  border-right-color: transparent;
+  border-left-width: 5px;
+  border-left-color: transparent;
+  content: "";
+  opacity: 0.3;
+}
+
+.arrow-current::before {
+  display: inline-block;
+  vertical-align: middle;
+  border: 10px solid #000000;
+  border-right-width: 5px;
+  border-right-color: transparent;
+  border-left-width: 5px;
+  border-left-color: transparent;
+  content: "";
+  opacity: 1;
+}
+
+.arrow:hover::before,
+.arrow:focus::before {
+  opacity: 0.6;
+}
+
+.arrow:active::before {
+  opacity: 1;
+}
+
+.arrow-up::before {
+  border-top-width: 0;
+}
+
+.arrow-down::before {
+  border-bottom-width: 0;
 }
 
 /* Cеточные стили-footer*/
@@ -1396,11 +1478,24 @@ textarea {
   background-color: #e74246;
 }
 
-.footer-bonus{
+.inscription{
   margin: 0;
   width: 560px;
 }
 
+.join-us {
+  font-size: 36px;
+  line-height: 36px;
+  color:#000000;
+  font-weight: 700;
+}
+
+.discount{
+  font-size: 16px;
+  line-height: 22px;
+  color:#444444;
+  font-weight: 400;
+}
 
 
 .map {
@@ -1412,11 +1507,3 @@ textarea {
   background-image: url("../img/map-marker.jpg");
   background-position:right;
 }
-
-
-/*.map iframe {
-display: block;
-position: relative;
-z-index: 10;
-border: none;
-}*/
